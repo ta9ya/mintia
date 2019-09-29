@@ -3,7 +3,7 @@
 
 
 from pathlib import Path
-from image2markdown import Image2Markdown
+from mintia import Image2Markdown
 
 
 def test_create_markdown():

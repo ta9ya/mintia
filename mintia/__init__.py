@@ -2,4 +2,4 @@
 # coding:utf8
 
 
-from image2markdown import *
+from .image2markdown import *
