@@ -2,4 +2,4 @@
 
 ![](image/smartSpeaker.png)
 
-![](image/ikezaki.png)
+![](image/ikezaki.PNG)

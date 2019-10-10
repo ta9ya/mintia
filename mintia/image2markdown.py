@@ -15,7 +15,7 @@ class Image2Markdown:
         self.target_dir = Path(_target_dir)
 
         assert len(_suffixes) > 0, 'suffix is empty'
-        self.target_suffixes = _suffixes
+        self.target_suffixes = [s.lower() for s in _suffixes]
 
         self.__created_markdowns: List[Path] = list()
 
@@ -34,7 +34,7 @@ class Image2Markdown:
         # create filelist by a directory
         for dirpath in dirpathes:
 
-            input_texts = [d.name for d in dirpath.glob('*') if re.search('|'.join(self.target_suffixes), str(d))]
+            input_texts = [d.name for d in dirpath.glob('*') if re.search('|'.join(self.target_suffixes), str(d).lower())]
             input_texts = ['![]({})'.format(dirpath.name + '/' + t) for t in input_texts]
 
             # create markdown
