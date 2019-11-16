@@ -1,10 +1,11 @@
-Sample Module Repository
-========================
+# mintia
 
-This simple project is an example repo for Python projects.
+Mintia is a summary creator from image files.
 
-`Learn more <http://www.kennethreitz.org/essays/repository-structure-and-python>`_.
 
----------------
+## How to run mintia
 
-If you want to learn more about ``setup.py`` files, check out `this repository <https://github.com/kennethreitz/setup.py>`_.
+Mintia works with pipenv.
+
+`$ pipenv run command [image file's directory path] [target suffix]`
+

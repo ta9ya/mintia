@@ -7,7 +7,7 @@ from mintia import Image2Markdown
 
 
 def test_create_markdown():
-    TESTS = []
+    tests = []
 
     target_dir = 'test_markdown/'
     suffix = ['.png']
